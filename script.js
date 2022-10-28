@@ -15,7 +15,8 @@ var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialCharArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?"];
   newpassword = [];
 passwordTemp = 0;
-var finalpass = "";
+var finalpass = [];
+
 // Write password to the #password input
 
 function numberGenerator() {
@@ -27,17 +28,17 @@ function numberGenerator() {
 }
 function lowerCaseGenerator() {
   for (let i = 0; i < lowerCaseArray.length; i++) {
-    newpassword.push(lowerCaseArray)
+    newpassword.push(lowerCaseArray[i])
   }
 }
 function specialCharacterGenerator() {
   for (let i = 0; i < specialCharArray.length; i++) {
-    newpassword.push(specialCharArray)
+    newpassword.push(specialCharArray[i])
   }
 }
 function upperCaseGenerator() {
   for (i = 0; i < upperCaseArray.length; i++) {
-    newpassword.push(upperCaseArray)
+    newpassword.push(upperCaseArray[i])
   }
 }
 function generatePassword() {
@@ -55,7 +56,7 @@ function generatePassword() {
 
   if (isLowerCase) {
     lowerCaseGenerator()
-    console.log(newpassword)
+   
   }
   var isUpperCase = confirm("Do you want Upper case letters in your password");
     if (isUpperCase) {
@@ -69,13 +70,18 @@ function generatePassword() {
       if (isSpecialCharacters) {
     specialCharacterGenerator()
   }
-  console.log(newpassword)
+// console.log(newpassword)
 
-  for (let i = 0; i < newpassword.length; i++){
+  for (let i = 0; i < passwordTemp; i++){
+    console.log(passwordTemp)
+    // returns index value
      var randomLength = Math.floor(Math.random() * newpassword.length);
-    finalpass += randomLength;
-    console.log(finalpass)
+  var indexValue = newpassword[randomLength]
+    // console.log(randomLength)
+    finalpass.push(indexValue)
   }
+  console.log(finalpass.join(""))
+  return finalpass.join("")
 }
 function writePassword() {
 
