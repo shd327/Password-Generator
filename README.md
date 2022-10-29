@@ -18,7 +18,7 @@ This application was built to randomly generate passwords. Due to the ongoing st
 <br/>
 
 ## Webpage
-![](/assets/images/gifOfPM.GIF)
+![](/assets/images/gifOfPM.gif)
 
 
 
