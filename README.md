@@ -9,7 +9,6 @@ This application was built to randomly generate passwords. Due to the ongoing st
 ## Table of Content
 - [Webpage](#webpage)
 - [Installation](#installation)
-- [Code_Breakdown](#code_breakdown)
 - [Contact_Information](#contact_infomration)
 - [Credits_and_References](#credits_and_references)
 - [License](#license)
