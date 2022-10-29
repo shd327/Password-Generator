@@ -50,3 +50,7 @@ This project is free use
 
 ## Links
 
+[Live Link](https://shd327.github.io/Password-Generator/)
+
+[Github Link](https://github.com/shd327/Password-Generator)
+ 
